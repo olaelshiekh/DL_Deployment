@@ -36,7 +36,7 @@ DL_Deployment/
 ├── kaggle_sync.py    # Downloads the model from Kaggle using the API token
 ├── model/            # best_model.keras, class_names.json (downloaded)
 ├── notebook/         # Copy of the training notebook
-├── requirments.txt   # Pinned dependencies (ML + TensorFlow/Keras + Kaggle)
+├── requirements.txt   # Pinned deployment dependencies
 ├── .env              # KAGGLE_API_TOKEN (not committed)
 └── README.md
 ```
@@ -45,7 +45,7 @@ DL_Deployment/
 
 ```bash
 python3.11 -m venv .venv && source .venv/bin/activate
-pip install -r requirments.txt
+pip install -r requirements.txt
 
 # Get a token at https://www.kaggle.com/settings (API section) and put it in .env:
 echo 'KAGGLE_API_TOKEN=<your-token>' > .env
